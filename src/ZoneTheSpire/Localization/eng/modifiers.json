@@ -1,0 +1,17 @@
+{
+  "ZONE_THE_SPIRE_MODIFIER.bottle_description": "{@fermentory.bottle_description}",
+  "ZONE_THE_SPIRE_MODIFIER.bottle_title": "{@fermentory.bottle}",
+  "ZONE_THE_SPIRE_MODIFIER.description": "The Spire is divided into biome zones.",
+  "ZONE_THE_SPIRE_MODIFIER.duplicate_description": "[gold]Duplicate[/gold] a card in your [gold]Deck[/gold]. The price rises by [blue]{Amount}[/blue] after each removal or duplicate.",
+  "ZONE_THE_SPIRE_MODIFIER.duplicate_prompt": "Choose a card to duplicate.",
+  "ZONE_THE_SPIRE_MODIFIER.duplicate_title": "Duplicate",
+  "ZONE_THE_SPIRE_MODIFIER.scrap_description": "[green]Free[/green]. Downgrade an upgraded card for [blue]2[/blue] [gold]card rewards[/gold]. Doesn't raise the card removal price.",
+  "ZONE_THE_SPIRE_MODIFIER.scrap_prompt": "Choose an upgraded card to scrap.",
+  "ZONE_THE_SPIRE_MODIFIER.scrap_title": "Scrap",
+  "ZONE_THE_SPIRE_MODIFIER.shrouded_potion": "A [gold]Potion[/gold] hidden in shadow, revealed when bought.",
+  "ZONE_THE_SPIRE_MODIFIER.shrouded_relic": "A [gold]Relic[/gold] hidden in shadow, revealed when bought.",
+  "ZONE_THE_SPIRE_MODIFIER.shrouded_title": "Shrouded",
+  "ZONE_THE_SPIRE_MODIFIER.title": "Zone the Spire",
+  "ZONE_THE_SPIRE_MODIFIER.transform_description": "[gold]Transform[/gold] a card in your [gold]Deck[/gold]. The price rises by [blue]{Amount}[/blue] after each removal or transform.",
+  "ZONE_THE_SPIRE_MODIFIER.transform_title": "Transform"
+}

@@ -1,0 +1,14 @@
+{
+  "ZONETHESPIRE-AUTOMATON_FORM.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold].\nGain {ArtifactPower:diff()} [gold]Artifact[/gold].\nGain {PlatingPower:diff()} [gold]Plating[/gold].",
+  "ZONETHESPIRE-AUTOMATON_FORM.title": "Automaton Form",
+  "ZONETHESPIRE-COLOUR_THIEF.description": "Choose 1 of {PrismaticRules.ColourThiefChoices} random cards from another character to add into your [gold]Hand[/gold]. It costs 0 this turn.",
+  "ZONETHESPIRE-COLOUR_THIEF.title": "Colour Thief",
+  "ZONETHESPIRE-INQUISITORS_WRATH.description": "Deal damage equal to the target's [gold]{@hallowed.hallowed}[/gold].{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
+  "ZONETHESPIRE-INQUISITORS_WRATH.title": "Inquisitor's Wrath",
+  "ZONETHESPIRE-LANTERN_LIGHT.description": "Reveal enemy intents this turn{IsMultiplayer: (only you can see them)|}. Reveal the [gold]{@shadow.shaded}[/gold] cards in your [gold]Hand[/gold]. Heal [blue]{Heal:diff()}[/blue] HP. Gain [blue]{StrengthPower:diff()}[/blue] [gold]Strength[/gold] and [blue]{DexterityPower:diff()}[/blue] [gold]Dexterity[/gold]. Remove [blue]5[/blue] [gold]Doom[/gold].",
+  "ZONETHESPIRE-LANTERN_LIGHT.title": "Lantern Light",
+  "ZONETHESPIRE-LIGHT_THE_WAY.description": "Reveal enemy intents this turn{IsMultiplayer: (only you can see them)|}. Reveal the [gold]{@shadow.shaded}[/gold] cards in your [gold]Hand[/gold]. Remove [blue]10[/blue] [gold]Doom[/gold].",
+  "ZONETHESPIRE-LIGHT_THE_WAY.title": "{@shadow.light_the_way}",
+  "ZONETHESPIRE-SCRAPYARD_AUTOMATON.description": "Whenever you draw this card, lose {Energy:energyIcons()}.\nAfter {Combats:diff()} {Combats:plural:combat|combats}, becomes [gold]Automaton Form[/gold].",
+  "ZONETHESPIRE-SCRAPYARD_AUTOMATON.title": "Scrapyard Automaton"
+}

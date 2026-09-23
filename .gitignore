@@ -1,0 +1,30 @@
+bin/
+obj/
+dist/
+workshop/*/content/
+mod-uploader.log
+*.user
+.vs/
+.idea/
+TestResults/
+
+# Vanilla event text extracted for the sts2-event-writing skill (game content: study only, never committed)
+.agents/skills/sts2-event-writing/references/vanilla/
+
+# Vanilla tooltip text extracted for the sts2-tooltips skill (game content: study only, never committed)
+.agents/skills/sts2-tooltips/references/vanilla/
+
+# Personal terms for tools/check-sensitive.ps1 (local only, never committed)
+.sensitive-terms
+
+# Local-only files that may hold personal data or machine paths
+*.log
+.env
+.env.*
+*.local.*
+.claude/
+.vscode/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store

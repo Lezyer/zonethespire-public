@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <Sts2Dir Condition="'$(Sts2Dir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Slay the Spire 2</Sts2Dir>
+    <Sts2DataDir>$(Sts2Dir)\data_sts2_windows_x86_64</Sts2DataDir>
+    <BaseLibDir Condition="'$(BaseLibDir)' == ''">C:\Program Files (x86)\Steam\steamapps\workshop\content\2868840\3737335127\BaseLib</BaseLibDir>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <!-- Built files record source paths (the PDB path in the DLL, file paths in stack traces); map the repo folder to
+         a neutral root so no local path (and no Windows user name) ships in the mod. -->
+    <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))=/zonethespire/</PathMap>
+  </PropertyGroup>
+</Project>

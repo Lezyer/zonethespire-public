@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <AssemblyName>ZoneTheSpire</AssemblyName>
+    <RootNamespace>ZoneTheSpire</RootNamespace>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DistDir>$(MSBuildThisFileDirectory)..\..\dist\ZoneTheSpire\</DistDir>
+    <DeployToGame Condition="'$(DeployToGame)' == ''">false</DeployToGame>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="sts2">
+      <HintPath>$(Sts2DataDir)\sts2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(Sts2DataDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GodotSharp">
+      <HintPath>$(Sts2DataDir)\GodotSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SmartFormat">
+      <HintPath>$(Sts2DataDir)\SmartFormat.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BaseLib">
+      <HintPath>$(BaseLibDir)\BaseLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CopyModToDist" AfterTargets="Build">
+    <ItemGroup>
+      <ZoneTheSpireModFiles Include="$(TargetPath);$(MSBuildProjectDirectory)\ZoneTheSpire.json" />
+      <ZoneTheSpireTextures Include="$(MSBuildProjectDirectory)\Assets\Textures\*.png" />
+      <ZoneTheSpireLocalization Include="$(MSBuildProjectDirectory)\Localization\**\*.json" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ZoneTheSpireModFiles)" DestinationFolder="$(DistDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(ZoneTheSpireTextures)" DestinationFolder="$(DistDir)textures\" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(ZoneTheSpireLocalization)" DestinationFiles="@(ZoneTheSpireLocalization->'$(DistDir)localization\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+    <Copy Condition="'$(DeployToGame)' == 'true'" SourceFiles="@(ZoneTheSpireModFiles)" DestinationFolder="$(Sts2Dir)\mods\ZoneTheSpire\" SkipUnchangedFiles="true" />
+    <Copy Condition="'$(DeployToGame)' == 'true'" SourceFiles="@(ZoneTheSpireTextures)" DestinationFolder="$(Sts2Dir)\mods\ZoneTheSpire\textures\" SkipUnchangedFiles="true" />
+    <Copy Condition="'$(DeployToGame)' == 'true'" SourceFiles="@(ZoneTheSpireLocalization)" DestinationFiles="@(ZoneTheSpireLocalization->'$(Sts2Dir)\mods\ZoneTheSpire\localization\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+    <Message Importance="high" Text="ZoneTheSpire copied to $(DistDir)" />
+    <Message Condition="'$(DeployToGame)' == 'true'" Importance="high" Text="ZoneTheSpire deployed to $(Sts2Dir)\mods\ZoneTheSpire\" />
+  </Target>
+</Project>
