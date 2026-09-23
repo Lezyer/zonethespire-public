@@ -4,8 +4,8 @@ A Slay the Spire 2 mod by **Reyzel**. Zone the Spire adds 14 zones that can appe
 mechanics for fights, shops and rest sites, along with zone relics, zone events and new card modifiers. Zones are generated
 per act, saved with the run and synchronised in multiplayer; most of the map stays unzoned.
 
-Players: get it from the [Steam Workshop](https://steamcommunity.com/app/2868840/workshop/) (search "Zone the Spire"). This
-repository is the source, published with each release.
+Players: get it from the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3806787309). This repository
+is the source, published with each release.
 
 ## Zones
 
@@ -93,3 +93,7 @@ arrive with the next release.
 ## Licence
 
 [GPL-3.0](LICENSE).
+
+## Disclaimer
+
+Not affiliated with or endorsed by Mega Crit. Slay the Spire is a trademark of Mega Crit.

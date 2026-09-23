@@ -3,7 +3,7 @@
   "name": "Zone the Spire",
   "author": "Reyzel",
   "description": "Zone the Spire adds new zones that alter gameplay with new challenges, mechanics and rewards.",
-  "version": "0.16.0",
+  "version": "1.0.0",
   "has_pck": false,
   "has_dll": true,
   "dependencies": [
